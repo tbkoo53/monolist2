@@ -17,6 +17,14 @@ class UsersController < ApplicationController
   def show
     @items = @user.items.group('items.id')
   end
+  
+  # def wants
+  #   @wants = @user.want_items
+  # end
+  
+  # def haves
+  #   @haves = @user.have_items
+  # end  
 
   private
   def set_user
